@@ -1,0 +1,21 @@
+{
+  "name": "retotecnico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "serverless offline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.119",
+    "esbuild": "^0.19.2",
+    "serverless": "^3.34.0",
+    "serverless-esbuild": "^1.46.0",
+    "serverless-offline": "^12.0.4",
+    "serverless-plugin-typescript": "^2.1.5",
+    "typescript": "^5.2.2"
+  }
+}

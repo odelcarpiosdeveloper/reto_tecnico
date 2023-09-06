@@ -1,0 +1,32 @@
+service: RetoTecnico
+
+useDotenv: true
+
+provider: 
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  getUsers:
+    handler: src/test.getUsers
+    events: 
+      - httpApi: GET /users
+  
+  createUser:
+    handler: src/test.createUser
+    events: 
+      - httpApi: POST /createUser
+  
+  root:
+    handler: src/test.root
+    events: 
+      - httpApi: GET /root
+
+  planetas:
+    handler: src/test.planetas
+    events: 
+      - httpApi: GET /planetas/{id}
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
